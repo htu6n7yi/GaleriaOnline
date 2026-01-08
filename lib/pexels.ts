@@ -1,4 +1,4 @@
-import { PexelsResponse, Photo } from '@/types';
+import { PexelsResponse, Photo } from '@/app/types';
 
 const PEXELS_API_KEY = process.env.NEXT_PUBLIC_PEXELS_API_KEY;
 const BASE_URL = 'https://api.pexels.com/v1';
