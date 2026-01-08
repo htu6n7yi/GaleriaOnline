@@ -24,10 +24,6 @@ export default function Header() {
               Upload
             </Button>
             
-            <Avatar className="cursor-pointer">
-              <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=user" />
-              <AvatarFallback>U</AvatarFallback>
-            </Avatar>
           </div>
         </div>
       </div>

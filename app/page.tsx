@@ -1,14 +1,20 @@
-import GalleryGrid from "@/components/gallery/GalleryGrid";
-import HeroSection from "@/components/hero/HeroSection";
-import { h1, main } from "framer-motion/client";
-import Image from "next/image";
+'use client';
 
+import { useState } from 'react';
+import HeroSection from '@/components/hero/HeroSection';
+import GalleryGrid from '@/components/gallery/GalleryGrid';
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
+
   return (
-    <main>
-      <HeroSection />
-      <GalleryGrid />
-    </main>
-  )
+    <>
+      <HeroSection onSearch={handleSearch} />
+      <GalleryGrid searchQuery={searchQuery} />
+    </>
+  );
 }

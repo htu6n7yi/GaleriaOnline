@@ -1,6 +1,10 @@
 import SearchBar from './SearchBar';
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  onSearch: (query: string) => void;
+}
+
+export default function HeroSection({ onSearch }: HeroSectionProps) {
   return (
     <section className="relative bg-gradient-to-b from-[#0f1419] via-[#1a2332] to-[#0f1419] py-20 md:py-32">
       {/* Background Overlay */}
@@ -10,16 +14,16 @@ export default function HeroSection() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Título Principal */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Galeria de Fotos
+            Find your inspiration
           </h1>
           
           {/* Subtítulo */}
           <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
-            explore uma coleção selecionada de fotos em alta resolução.
+            Explore our curated collection of high-resolution photos from creators around the world.
           </p>
           
           {/* Barra de Busca */}
-          <SearchBar />
+          <SearchBar onSearch={onSearch} />
         </div>
       </div>
     </section>
