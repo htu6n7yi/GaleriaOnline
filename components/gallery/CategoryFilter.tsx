@@ -9,10 +9,10 @@ interface CategoryFilterProps {
 }
 
 const categories: { label: string; value: CategoryType }[] = [
-  { label: 'All', value: 'All' },
-  { label: 'Nature', value: 'Nature' },
-  { label: 'Architecture', value: 'Architecture' },
-  { label: 'Abstract', value: 'Abstract' },
+  { label: 'Tudo', value: 'All' },
+  { label: 'Natureza', value: 'Nature' },
+  { label: 'Arquitetura', value: 'Architecture' },
+  { label: 'Abstrata', value: 'Abstract' },
 ];
 
 export default function CategoryFilter({ 

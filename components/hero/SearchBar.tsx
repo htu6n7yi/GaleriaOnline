@@ -41,7 +41,7 @@ export default function SearchBar({ onSearch, initialValue = '' }: SearchBarProp
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
         <Input
           type="text"
-          placeholder="Search for photos..."
+          placeholder="Buscar fotos..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full bg-gray-800/50 border-gray-700 text-white placeholder:text-gray-500 h-14 pl-12 pr-12 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
@@ -61,7 +61,7 @@ export default function SearchBar({ onSearch, initialValue = '' }: SearchBarProp
         type="submit"
         className="bg-blue-600 hover:bg-blue-700 text-white h-14 px-8 rounded-xl font-semibold transition-all hover:scale-105"
       >
-        Search
+        Pesquisar
       </Button>
     </form>
   );

@@ -17,14 +17,6 @@ export default function Header() {
             </span>
           </div>
 
-          {/* Actions */}
-          <div className="flex items-center gap-4">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-              <Upload className="w-4 h-4 mr-2" />
-              Upload
-            </Button>
-            
-          </div>
         </div>
       </div>
     </header>

@@ -80,11 +80,11 @@ export default function GalleryGrid({ searchQuery }: GalleryGridProps) {
         {/* Título da seção */}
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Latest Uploads
+            Últimas Atualizações
           </h2>
           {searchQuery && (
             <p className="text-gray-400">
-              {filteredPhotos.length} results for "{searchQuery}"
+              {filteredPhotos.length} resultados para "{searchQuery}"
             </p>
           )}
         </div>
@@ -102,8 +102,8 @@ export default function GalleryGrid({ searchQuery }: GalleryGridProps) {
           </div>
         ) : filteredPhotos.length === 0 ? (
           <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
-            <p className="text-gray-400 text-xl mb-2">No photos found</p>
-            <p className="text-gray-500">Try adjusting your search or filter</p>
+            <p className="text-gray-400 text-xl mb-2">Nenhuma foto encontrada</p>
+            <p className="text-gray-500">Tente ajustar sua busca ou filtro</p>
           </div>
         ) : (
           <>
@@ -128,10 +128,10 @@ export default function GalleryGrid({ searchQuery }: GalleryGridProps) {
                   {loading ? (
                     <>
                       <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                      Loading...
+                      Carregando...
                     </>
                   ) : (
-                    'Load More Photos'
+                    'Carregar Mais Fotos'
                   )}
                 </Button>
               </div>

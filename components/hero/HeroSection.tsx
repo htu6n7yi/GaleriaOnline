@@ -14,12 +14,12 @@ export default function HeroSection({ onSearch }: HeroSectionProps) {
         <div className="max-w-4xl mx-auto text-center">
           {/* Título Principal */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Find your inspiration
+            Galeria de Fotos
           </h1>
           
           {/* Subtítulo */}
           <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
-            Explore our curated collection of high-resolution photos from creators around the world.
+            Explore uma vasta coleção de fotos incríveis e gratuitas para todos os seus projetos.
           </p>
           
           {/* Barra de Busca */}
